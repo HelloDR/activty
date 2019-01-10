@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'shangya';
+	src:url("font/shangya.otf");
+}
+/* 主体内容 */
+.mainBack{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	/*max-height:660px;*/
+}
+.turnplate_box{
+	width: 300px;
+	height: 300px;
+	margin: 30px auto 0 auto;
+	position: relative;
+}
+.turnplate_box canvas{
+	position: absolute;
+}
+.turnPlate{
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	z-index: -1;
+	width: 360px;
+}
+#myCanvas{
+	background-color: white;
+	border-radius: 100%;
+	border: 5px solid #f8cb0c;
+	-webkit-box-shadow: 0 0 10px 5px #ccc;
+	-moz-box-shadow: 0 0 10px 5px #ccc;
+	box-shadow: 0 0 10px 5px #ccc;
+}
+#myCanvas01,#myCanvas03{
+	left: 55px;
+	top: 54px;
+	z-index: 30;
+}
+#myCanvas02{
+	left: 75px;
+	top: 75px;
+	z-index: 20;
+	/*border: 5px solid #e5c800;*/
+	border-radius: 100%;
+}
+#myCanvas{
+    -o-transform:  transform 6s;
+	-ms-transform:  transform 6s;
+	-moz-transform:  transform 6s;		
+	-webkit-transform:  transform 6s;
+	transition: transform 6s;
+	-o-transform-origin:  50% 50%;
+	-ms-transform-origin:  50% 50%;
+	-moz-transform-origin:  50% 50%;		
+	-webkit-transform-origin:  50% 50%;
+	transform-origin: 50% 50%;
+}
+.turnplatw_btn{
+	width: 60px;
+	height: 60px;
+	left: 120px;
+	top: 120px;
+	border-radius: 100%;
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	outline: none;
+	z-index: 40;
+}
+
+/*抽奖规则*/
+.rule_title{
+	text-align: center;
+	margin-top:70px;
+}
+.rule_text{
+	text-align: center;
+	color: #feeeee;
+	font-size:12px;
+}
+.prize{
+	color:#e5c800;
+}
+/*滚屏显示*/
+.scrollUl {
+	overflow:hidden;
+	position:relative;
+	background: rgba(0,0,0,.3);
+	color: #eecfcf;
+	bottom:-40px;
+}
+#scrollUlTest1 {
+	height:20px;
+	margin:0 45px;
+	-webkit-box-shadow: inset 0px 0px 10px #000;
+	-moz-box-shadow: inset 0px 0px 10px #000;
+	box-shadow: inset 0px 0px 10px #000;
+}
+.scrollUl ul, .scrollUl li {
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none outside;
+}
+.scrollUl ul {
+	position:absolute;
+}
+.scrollUl li {
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	text-align: center;
+}
+.scrollUl li span{
+	font-size:14px;
+}
+
+/* 广告 */
+.adv{
+	max-width:205px;
+	margin:0 auto 0 auto;
+}
+.adv_img{
+	width:200px;
+}

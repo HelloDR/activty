@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>圆盘抽奖</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div style="width: 100%;height: 100%;position:relative;">
+    <img src="images/back2.jpg" alt="" class="mainBack">
+    <div class="adv">
+        <img src="images/img_1.png" alt="" class="adv_img">
+    </div>
+    <!--S 奖盘 -->
+    <div class="turnplate_box">
+        <canvas id="myCanvas" width="300px" height="300px">抱歉！浏览器不支持。</canvas>
+        <canvas id="myCanvas01" width="200px" height="200px">抱歉！浏览器不支持。</canvas>
+        <canvas id="myCanvas03" width="200px" height="200px">抱歉！浏览器不支持。</canvas>
+        <canvas id="myCanvas02" width="150px" height="150px">抱歉！浏览器不支持。</canvas>
+        <button id="tupBtn" class="turnplatw_btn"></button>
+        <img src="images/turnplate-bg_2.png" alt="" class="turnPlate">
+    </div>
+    <!--E 奖盘 -->
+    <!--S 中奖用户 -->
+    <div class="record_line scrollUl"  id="scrollUlTest1">
+        <ul>
+            <li>恭喜 159****3540 的用户抽中 <span class="prize">20天免费借阅</span></li>
+            <li>恭喜 159****6666 的用户抽中 <span class="prize">30天免费借阅</span></li>
+        </ul>
+    </div>
+    <!--E 中奖用户 -->
+    <!--S 抽奖规则-->
+    <div class="rule_title">
+        <img src="images/rule_title.png" alt="">
+    </div>
+    <div class="rule_text">
+        点击转盘进行抽奖，每人每天可以抽奖一次。<br>
+    </div>
+    <!--E 抽奖规则-->
+</div>
+<!-- 更改系统默认弹窗 -->
+<script src="js/change_alert.js"></script>
+<script src="js/prizeInfo.js"></script>
+</body>
+</html>
