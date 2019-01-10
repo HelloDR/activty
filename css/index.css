@@ -9,6 +9,7 @@ a:hover{color:#c00; text-decoration:none;}
 
 /*==== 弹窗 =====*/
 .cover {
+	height: 100%!important;
 	z-index: 99;
 	position: fixed;
 	top: 0;
@@ -114,16 +115,22 @@ a:hover{color:#c00; text-decoration:none;}
 .rotate {
 	z-index: 10;
 	position: absolute;
-	width: 70%;
-	left: 15%;
+	/*width: 70%;*/
+	/*left: 15%;*/
 	top: 25vw;
+	padding:10px;
 }
 .pointer {
+	/*z-index: 15;*/
+	/*position: absolute;*/
+	/*width: 20%;*/
+	/*left: 40%;*/
+	/*top: 41vw;*/
 	z-index: 15;
 	position: absolute;
 	width: 20%;
 	left: 40%;
-	top: 41vw;
+	top: 56vw;
 }
 	.rotate img,.pointer img {
 		width: 100%;
