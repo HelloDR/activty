@@ -1,49 +1,169 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>圆盘抽奖</title>
+    <meta charset="UTF-8"/>
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>活动</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/awardRotate.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/prizeInfo.js"></script>
+    <style>
+        .mainBack {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* max-height: 660px; */
+        }
+
+        .adv {
+            max-width: 205px;
+            margin: 0 auto 0 auto;
+        }
+
+        .adv-img {
+            width: 200px;
+            margin-top:15px;
+        }
+
+        /*滚屏显示*/
+        .scrollUl {
+            overflow: hidden;
+            position: relative;
+            color: #eecfcf;
+            bottom: -40px;
+        }
+
+        #scrollUlTest1 {
+            height: 20px;
+            margin: 0 25px;
+        }
+
+        .scrollUl ul, .scrollUl li {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none outside;
+        }
+
+        .scrollUl ul {
+            position: absolute;
+        }
+
+        .scrollUl li {
+            height: 20px;
+            line-height: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .scrollUl li span {
+            font-size: 16px;
+        }
+
+        .prize {
+            color: #e5c800;
+        }
+
+        /*抽奖规则*/
+        .rule_title {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .rule_text {
+            color: #feeeee;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+            margin-top: 15px;
+        }
+
+        .wrapper_rule {
+            position: absolute;
+            bottom: 50px;
+            left: 20%;
+        }
+    </style>
 </head>
 <body>
-<div style="width: 100%;height: 100%;position:relative;">
-    <img src="images/back2.jpg" alt="" class="mainBack">
+<div style="width: 100%;height: 800px;position:relative;">
     <div class="adv">
-        <img src="images/img_1.png" alt="" class="adv_img">
+        <img src="images/img_1.png" alt="" class="adv-img">
     </div>
-    <!--S 奖盘 -->
-    <div class="turnplate_box">
-        <canvas id="myCanvas" width="300px" height="300px">抱歉！浏览器不支持。</canvas>
-        <canvas id="myCanvas01" width="200px" height="200px">抱歉！浏览器不支持。</canvas>
-        <canvas id="myCanvas03" width="200px" height="200px">抱歉！浏览器不支持。</canvas>
-        <canvas id="myCanvas02" width="150px" height="150px">抱歉！浏览器不支持。</canvas>
-        <button id="tupBtn" class="turnplatw_btn"></button>
-        <img src="images/turnplate-bg_2.png" alt="" class="turnPlate">
+    <img src="images/back2.jpg" alt="" class="mainBack">
+    <!-- 弹出层 -->
+    <div class="cover"></div>
+    <div class="covers1">
+        <div class="covers_quit">
+            <img src="images/pop_up_quit_icon.png" alt="pop_up_quit_icon"/>
+        </div>
+        <div class="covers_icon">
+            <img src="images/task_draw_reward_free_img.png" alt="task_draw_reward_free_img"/>
+        </div>
+        <div class="covers_font">恭喜您获得1次<span>免费</span>的机会</div>
+        <div class="covers_btn">立即前往抽奖</div>
     </div>
-    <!--E 奖盘 -->
-    <!--S 中奖用户 -->
-    <div class="record_line scrollUl"  id="scrollUlTest1">
-        <ul>
+
+    <div class="covers2">
+        <div class="covers_quit">
+            <img src="images/pop_up_quit_icon.png" alt="pop_up_quit_icon"/>
+        </div>
+        <div class="covers_icon">
+            <img src="images/task_draw_reward_gereward_img.png" alt="task_draw_reward_gereward_img"/>
+        </div>
+        <div class="covers_font">恭喜您抽中了<span>10金币</span></div>
+        <!--<div class="covers_btn covers_btn1">支付200金币再抽一次</div>-->
+        <a href="#rules_con_footer">
+            <div class="covers_btn2">点击领取奖品</div>
+        </a>
+    </div>
+
+    <div class="covers3">
+        <div class="covers_quit">
+            <img src="images/pop_up_quit_icon.png" alt="pop_up_quit_icon"/>
+        </div>
+        <div class="covers_icon">
+            <img src="images/task_draw_reward_tip_img.png" alt="task_draw_reward_tip_img"/>
+        </div>
+        <div class="covers_font">今天的免费机会已经用完</div>
+        <div class="covers_btn covers_btn1">支付200金币再抽一次</div>
+        <a href="#rules_con_footer">
+            <div class="covers_btn2">完成任务,免费抽奖</div>
+        </a>
+    </div>
+    <!-- 抽奖转盘 -->
+    <div class="turntable">
+        <div class="rotate"><img id="rotate" src="images/circle.png"/></div>
+        <div class="pointer"><img src="images/task_draw_reward_pointer.png"/></div>
+    </div>
+
+    <div class="record_line scrollUl" id="scrollUlTest1">
+        <ul style="top: -20px;">
+            <li>恭喜 159****3540 的用户抽中 <span class="prize">20天免费借阅</span></li>
+            <li>恭喜 159****6666 的用户抽中 <span class="prize">30天免费借阅</span></li>
+        </ul>
+        <ul style="top: 20px;">
             <li>恭喜 159****3540 的用户抽中 <span class="prize">20天免费借阅</span></li>
             <li>恭喜 159****6666 的用户抽中 <span class="prize">30天免费借阅</span></li>
         </ul>
     </div>
-    <!--E 中奖用户 -->
-    <!--S 抽奖规则-->
-    <div class="rule_title">
-        <img src="images/rule_title.png" alt="">
+    <!-- 抽奖规则 -->
+    <div class="wrapper_rule">
+        <div class="rule_title">
+            <img src="images/rule_title1.png" alt="">
+        </div>
+        <div class="rule_text">
+            （1）每人仅有一次抽奖机会<br>
+            （2）绘本配送范围为湖塘高塔半径4公里内<br>
+            （3）佳农探趣的奖品有效期为2月28日前
+        </div>
     </div>
-    <div class="rule_text">
-        点击转盘进行抽奖，每人每天可以抽奖一次。<br>
-    </div>
-    <!--E 抽奖规则-->
 </div>
-<!-- 更改系统默认弹窗 -->
-<script src="js/change_alert.js"></script>
-<script src="js/prizeInfo.js"></script>
 </body>
 </html>

@@ -35,9 +35,13 @@ body{
     text-align: center;
 }
 .title h1{
-    color: #ffd48c;
+    /*color: #ffd48c;*/
+    color: #fff;
     font-size:80px;
-    text-shadow: 10px 10px 10px #000;
+    font-weight:normal;
+    font-family: "行书";
+    /*text-shadow: 10px 10px 10px #000;*/
+    letter-spacing:15px;
 }
 /* 奖品信息 */
 .prize-txt{
@@ -53,7 +57,7 @@ body{
     -moz-box-shadow:  0 0 20px #000;
     box-shadow: 0 0 20px #000;
     font-family: "行书";
-    text-shadow: 10px 10px 10px #000;
+    /*text-shadow: 10px 10px 10px #000;*/
 }
 .prize-txt:before, .prize-txt:after {
     content: "";
@@ -84,9 +88,9 @@ body{
     linear-gradient(-135deg, transparent 75%, #fff 75%);
 }
 .tip{
-    color: #fdd786;
+    color: #fff;
     font-size: 40px;
-    text-align: justify;
+    text-align: center;
     margin:40px 20px 0 20px;
     text-indent:2rem;
 }
@@ -131,8 +135,7 @@ body{
 
 /* 商家 */
 .seller-wrapper{
-    margin: 20px 40px 0 40px;;
-    background-color: whitesmoke;
+    margin: 0 5px;
     padding:5px;
 }
 .seller-title{
@@ -146,12 +149,15 @@ body{
 .seller a{
     /*display: inline-block;*/
     float: left;
-    width:48%;
-    padding:5px;
+    width: 45%;
+    /*padding: 15px;*/
 }
 .seller a img{
     width:100%;
     -webkit-border-radius:15px;
     -moz-border-radius:15px;
     border-radius:15px;;
+    -webkit-box-shadow: 10px 10px 10px #000;
+    -moz-box-shadow: 10px 10px 10px #000;
+    box-shadow: 10px 10px 10px #000;
 }
