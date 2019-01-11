@@ -116,8 +116,8 @@ a:hover{color:#c00; text-decoration:none;}
 .rotate {
 	z-index: 10;
 	position: absolute;
-	/*width: 70%;*/
-	/*left: 15%;*/
+	width: 80%;
+	left: 8%;
 	top: 25vw;
 	padding:10px;
 }
@@ -129,9 +129,9 @@ a:hover{color:#c00; text-decoration:none;}
 	/*top: 41vw;*/
 	z-index: 15;
 	position: absolute;
-	width: 20%;
-	left: 40%;
-	top: 56vw;
+	width: 17%;
+	left: 42%;
+	top: 52vw;
 }
 	.rotate img,.pointer img {
 		width: 100%;
