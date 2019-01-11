@@ -43,6 +43,7 @@ a:hover{color:#c00; text-decoration:none;}
 		width: 46%;
 		margin-left: 27%;
 		margin-top: 8vw;
+		margin-bottom:2vw;
 	}
 		.covers_icon img {
 			width: 100%;
@@ -68,8 +69,8 @@ a:hover{color:#c00; text-decoration:none;}
 	}
 
 .covers2,.covers3 {
-	width: 80%;
-	height: 85vw;
+	width: 70%;
+	height: 65vw;
 	display: none;
 }
 
