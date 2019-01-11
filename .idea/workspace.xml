@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd631bc2-d02c-42c0-9f17-88a5c12d856c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/back.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/back1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/back3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/rule_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_blue_img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_gray_img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_green_img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_red_img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_rule_title_img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_status_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_status_bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/task_draw_reward_title_img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/turnplate-bg_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/zhiquleike.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/change_alert.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receive-prizes.html" afterPath="$PROJECT_DIR$/receive-prizes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/receive.css" afterPath="$PROJECT_DIR$/css/receive.css" />
     </list>
     <ignored path="activity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="receive-prizes.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="receive-prizes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/receive-prizes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="745">
               <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#a#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -58,7 +38,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
+            <state relative-caret-position="1442">
               <caret line="121" column="36" selection-start-line="121" selection-start-column="36" selection-end-line="121" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,6 +47,16 @@
                 <element signature="n#style#0;n#ul#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#1;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="receive.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/receive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,9 +72,9 @@
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/js/jquery-1.10.2.js" />
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/css/receive.css" />
         <option value="$PROJECT_DIR$/receive-prizes.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/receive.css" />
       </list>
     </option>
   </component>
@@ -253,12 +243,12 @@
       <workItem from="1547106106985" duration="4034000" />
       <workItem from="1547110349704" duration="168000" />
       <workItem from="1547110528950" duration="3226000" />
-      <workItem from="1547167991146" duration="421000" />
+      <workItem from="1547167991146" duration="922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7849000" />
+    <option name="totallyTimeSpent" value="8350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -416,14 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/receive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/prizeInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -432,9 +414,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/receive-prizes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
+        <state relative-caret-position="1442">
           <caret line="121" column="36" selection-start-line="121" selection-start-column="36" selection-end-line="121" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -446,13 +438,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/receive-prizes.html">
+    <entry file="file://$PROJECT_DIR$/css/receive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
