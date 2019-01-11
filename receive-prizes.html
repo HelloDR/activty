@@ -28,17 +28,16 @@
         <!--描述信息描述信息描述信息描述信息描述信息-->
         <!--</h2>-->
         <div class="seller">
-            <a href="" style="margin: 22px;"><img src="images/fanqiemiao.jpg" alt=""></a>
-            <a href="" style="margin: 26px;"><img src="images/huizhi.jpg" alt=""></a>
-
+            <a href="javascript:;" style="margin: 22px;"><img src="images/fanqiemiao1.jpg" alt="" data-id="1"></a>
+            <a href="javascript:;" style="margin: 26px;"><img src="images/huizhi.jpg" alt="" data-id="1"></a>
         </div>
         <div class="seller">
-            <a href="" style="margin: 22px;"><img src="images/zhiqule.jpg" alt=""></a>
-            <a href="" style="margin: 26px;"><img src="images/theone.jpg" alt=""></a>
+            <a href="javascript:;" style="margin: 22px;"><img src="images/zhiqule.jpg" alt="" data-id="1"></a>
+            <a href="javascript:;" style="margin: 26px;"><img src="images/theone.jpg" alt="" data-id="1"></a>
         </div>
         <div class="seller">
-            <a href="" style="margin: 22px;"><img src="images/shufa.jpg" alt=""></a>
-            <a href="" style="margin: 22px;"><img src="images/zhenpu.jpg" alt=""></a>
+            <a href="javascript:;" style="margin: 22px;"><img src="images/shufa.jpg" alt="" data-id="1"></a>
+            <a href="javascript:;" style="margin: 22px;"><img src="images/zhenpu.jpg" alt="" data-id="1"></a>
         </div>
     </div>
     <div class="tip">
@@ -64,6 +63,17 @@
             </div>
         </form>
     </div>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $(".seller").on("click","a",function () {
+                var status=$(this).children().attr("data-id");
+                if(status == 1){
+                    $(this).children().attr("src","images/fanqiemiao_mask.jpg");
+                }
+            });
+        });
+    </script>
 </div>
 </body>
 </html>
