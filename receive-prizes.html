@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>领取奖品</title>
-    <link rel="stylesheet" href="css/receive.css">
+  <meta charset="UTF-8">
+  <title>领取奖品</title>
+  <link rel="stylesheet" href="css/receive.css">
 </head>
 <body>
 <div style="width: 100%;height: 100%;position:relative;">
-    <!-- 背景图 -->
-    <img src="images/back2.jpg" alt="" class="mainBack">
-    <div class="title">
-        <h1>领取奖品</h1>
+  <!-- 背景图 -->
+  <img src="images/back.png" alt="" class="mainBack">
+  <div class="title">
+    <h1>领取奖品</h1>
+  </div>
+  <!-- 奖品信息 -->
+  <div class="wrapper-prize-txt">
+    <div class="prize-txt">
+      佳农探趣科普园入场券一张
     </div>
-    <!-- 奖品信息 -->
-    <div class="wrapper-prize-txt">
-        <div class="prize-txt">
-            佳农探趣科普园入场券一张
-        </div>
+  </div>
+  <!-- 赞助商家 -->
+  <div style="margin-top: 40px;font-size: 40px;text-align: center;color:#fff;">
+    <!--<p style="font-size: 80px;margin: 0;padding: 0;color: #ffd48c;text-shadow: 10px 10px 10px #000">赞助商家</p>-->
+    <p style="color:#fff;">活动期间，最多领取3份商家福利</p>
+  </div>
+  <div class="seller-wrapper">
+    <div class="seller">
+      <a href="images/fqm_mask.jpg" style="margin: 22px;"><img src="images/fqm.jpg" alt="" data-id="1"></a>
+      <a href="images/hz_mask.jpg" style="margin: 26px;"><img src="images/hz.jpg" alt="" data-id="1"></a>
     </div>
-    <!-- 商家 -->
-    <div style="margin-top: 40px;font-size: 40px;text-align: center;color:#fff;">
-        <!--<p style="font-size: 80px;margin: 0;padding: 0;color: #ffd48c;text-shadow: 10px 10px 10px #000">赞助商家</p>-->
-        <p style="color:#fff;">活动期间，最多领取3份商家福利</p>
+    <div class="seller">
+      <a href="images/zq_mask.jpg" style="margin: 22px;"><img src="images/zq.jpg" alt="" data-id="1"></a>
+      <a href="images/sf_mask.jpg" style="margin: 22px;"><img src="images/sf.jpg" alt="" data-id="1"></a>
     </div>
-    <div class="seller-wrapper">
-        <!--<h2 class="seller-title">-->
-        <!--描述信息描述信息描述信息描述信息描述信息-->
-        <!--</h2>-->
-        <div class="seller">
-            <a href="javascript:;" style="margin: 22px;"><img src="images/fanqiemiao1.jpg" alt="" data-id="1"></a>
-            <a href="javascript:;" style="margin: 26px;"><img src="images/huizhi.jpg" alt="" data-id="1"></a>
-        </div>
-        <div class="seller">
-            <a href="javascript:;" style="margin: 22px;"><img src="images/zhiqule.jpg" alt="" data-id="1"></a>
-            <a href="javascript:;" style="margin: 22px;"><img src="images/shufa.jpg" alt="" data-id="1"></a>
-        </div>
-        <div class="seller">
-            <a href="javascript:;" style="margin: 26px;"><img src="images/theone.jpg" alt="" data-id="1"></a>
-            <a href="javascript:;" style="margin: 22px;"><img src="images/zhenpu.jpg" alt="" data-id="1"></a>
-        </div>
+    <div class="seller">
+      <a href="images/zl_mask.jpg" style="margin: 26px;"><img src="images/zl.jpg" alt="" data-id="1"></a>
+      <a href="images/wq_mask.jpg" style="margin: 22px;"><img src="images/zp.jpg" alt="" data-id="1"></a>
     </div>
-    <div class="tip">
-        请正确填写领奖信息
-    </div>
-    <!-- 表单信息 -->
-    <div class="wrapper-form">
-        <form action="">
-            <div class="row">
-                <label for="info1">姓&nbsp;&nbsp;&nbsp;&nbsp;名</label>
-                <input type="text" placeholder="请输入您的姓名" name="info1">
-            </div>
-            <div class="row">
-                <label for="info1">手机号</label>
-                <input type="text" placeholder="请输您的手机号码" name="info1">
-            </div>
-            <!--<div class="row">-->
-                <!--<label for="info1">信息一</label>-->
-                <!--<input type="text" placeholder="请输入信息一" name="info1">-->
-            <!--</div>-->
-            <div class="row" style="padding:15px 0 20px 0;">
-                <input type="button" id="submit_btn">
-            </div>
-        </form>
-    </div>
-    <script src="js/jquery-1.10.2.js"></script>
-    <!--<script>-->
-        <!--$(function () {-->
-            <!--$(".seller").on("click","a",function () {-->
-                <!--var status=$(this).children().attr("data-id");-->
-                <!--if(status == 1){-->
-                    <!--$(this).children().attr("src","images/fanqiemiao_mask.jpg");-->
-                <!--}-->
-            <!--});-->
-        <!--});-->
-    <!--</script>-->
+  </div>
+  <div class="tip">
+    请正确填写领奖信息
+  </div>
+  <!-- 表单信息 -->
+  <div class="wrapper-form">
+    <form action="">
+      <div class="row">
+        <label for="info1">姓&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+        <input type="text" placeholder="请输入您的姓名" name="info1">
+      </div>
+      <div class="row">
+        <label for="info2">手机号</label>
+        <input type="text" placeholder="请输您的手机号码" name="info2">
+      </div>
+      <div class="row">
+        <label for="info3">宝宝姓名</label>
+        <input type="text" placeholder="请输宝宝的姓名" name="info3">
+      </div>
+      <div class="row">
+        <label for="info4">地址</label>
+        <input type="text" placeholder="请输您的住址" name="info4">
+      </div>
+      <div class="row" style="padding:15px 0 20px 0;">
+        <input type="button" id="submit_btn">
+      </div>
+    </form>
+  </div>
+  <script src="js/jquery-1.10.2.js"></script>
+  <script>
+    $(function () {
+      var index=0;
+      $(".seller").on("click","a",function (e) {
+        var link=$(this).attr("href");
+        index++;
+        if(index <= 3){
+          if($(this).children("img").attr('data-id') == "1"){
+            $(this).children("img").attr("src",link);
+          }
+        }
+        return false;
+      });
+    });
+  </script>
 </div>
 </body>
 </html>
