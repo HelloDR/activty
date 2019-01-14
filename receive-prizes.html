@@ -25,7 +25,7 @@
   </div>
   <div class="seller-wrapper">
     <div class="seller">
-      <a href="images/fqm_mask.jpg" style="margin: 22px;"><img src="images/fqm.jpg" alt="" data-id="1"></a>
+      <a href="images/fqm_mask.jpg" style="margin: 22px;" data-src="images/fqm_mask.jpg"><img src="images/fqm.jpg" alt="" data-id="1"></a>
       <a href="images/hz_mask.jpg" style="margin: 26px;"><img src="images/hz.jpg" alt="" data-id="1"></a>
     </div>
     <div class="seller">
@@ -68,7 +68,7 @@
   <script>
     $(function () {
       var index=0;
-      $(".seller").on("click","a",function (e) {
+      $(".seller a").click(function () {
         var link=$(this).attr("href");
         index++;
         if(index <= 3){
