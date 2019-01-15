@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>领取奖品</title>
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/receive.css">
 </head>
 <body>
@@ -64,6 +65,18 @@
       </div>
     </form>
   </div>
+  <!--弹出层-->
+  <div class="covers2">
+    <div class="covers_quit">
+      <img src="images/pop_up_quit_icon.png" alt="退出按钮"/>
+    </div>
+    <div style="margin: 20vw auto;">
+      <div class="covers_icon">
+        <img src="images/logo.png" alt="乐享好课"/>
+      </div>
+      <div class="covers_font" style="margin-top:5vw;font-size: 5vw;">提交信息成功</div>
+    </div>
+  </div>
   <script src="js/jquery-1.10.2.js"></script>
   <script>
     $(function () {
@@ -77,6 +90,14 @@
           }
         }
         return false;
+      });
+
+      //弹框提示
+      $("#submit_btn").on("click",function () {
+        $(".covers2").show();
+      });
+      $(".covers_quit").on('click',function () {
+        $(".covers2").hide();
       });
     });
   </script>
