@@ -38,7 +38,7 @@ a:hover {
 }
 
 /*==== 弹窗 =====*/
- .covers2, .covers3 {
+ .covers1,.covers2, .covers3 {
   z-index: 101;
   position: fixed;
   left: 0;
