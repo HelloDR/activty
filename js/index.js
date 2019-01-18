@@ -1,7 +1,7 @@
 //判断本地存储中是否存放了各个奖品的数量
 if (localStorage.getItem('arrNum') == null) {
   //将各个奖品的数量放入本地存储
-  localStorage.setItem('arrNum', [3, 5, 20, 1, 2, 1, 3, 20, 5, 2]);
+  localStorage.setItem('arrNum', [20,20, 20, 5, 10, 99, 40, 20, 50, 5]);
 }
 $(function () {
   $(".covers1").hide();
@@ -88,7 +88,7 @@ $(function () {
       for (var i = 0; i < arr.length; i++) {
         //var item = ((arr1[i]/62).toFixed(2));
         //根据随机数概率判断所中奖品
-        console.log(i,arr[i], item);
+        //console.log(i,arr[i], item);
         //判断该奖品是否已抽完
         if (arr1[i] == 0) {
           //将该奖品值设为空
@@ -168,10 +168,6 @@ $(function () {
         //     break;
         // }
       }
-      //console.log(arr);
-      // if (arr == null) {
-      //   $(".covers3").show();
-      // }
       /**
        *
        * @param array 存放奖品的函数
@@ -193,9 +189,11 @@ $(function () {
        * @returns {*}
        */
       function weightRandom(curValue) {
-        var randomConfig = [{id:"0",weight:3},{id:"1",weight:5},{id:"2",weight:20},
-          {id:"3",weight:1},{id:"4",weight:2},{id:"5",weight:1},{id:"6",weight:3},
-          {id:"7",weight:20},{id:"8",weight:5},{id:"9",weight:2}];
+        /*['30天免费借阅', '20天免费借阅', '谢谢参与', '免费借阅四次', '免费借阅三次', '佳农探趣生态园大礼包', '免费借阅两次',
+         '谢谢参与', '免费借阅一次', '40天免费借阅'];*/
+        var randomConfig = [{id:"0",weight:7},{id:"1",weight:7},{id:"2",weight:20},
+          {id:"3",weight:3},{id:"4",weight:5},{id:"5",weight:30},{id:"6",weight:10},
+          {id:"7",weight:20},{id:"8",weight:15},{id:"9",weight:3}];
         var randomList = [];
         for (var item in randomConfig) {
           for (var j = 0; j < randomConfig[item].weight; j++) {
@@ -208,7 +206,7 @@ $(function () {
             randomValue  = randomList[Math.floor(Math.random() * randomList.length)];
           }
         }
-        console.log(randomList);
+        //console.log(randomList);
         return Number(randomValue) ;
       }
 
