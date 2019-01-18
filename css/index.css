@@ -125,24 +125,28 @@ a:hover {
 
 .rotate {
   z-index: 10;
-  position: absolute;
+  /*position: absolute;*/
   width: 80%;
-  left: 8%;
-  top: 25vw;
-  padding: 10px;
+  /*left: 8%;*/
+  /*top: 25vw;*/
+  /*padding: 10px;*/
+  margin: 60px auto 0 auto;
 }
 
 .pointer {
-  /*z-index: 15;*/
-  /*position: absolute;*/
-  /*width: 20%;*/
-  /*left: 40%;*/
-  /*top: 41vw;*/
+  /* z-index: 15; */
+  /* position: absolute; */
+  /* width: 20%; */
+  /* left: 40%; */
+  /* top: 41vw; */
   z-index: 15;
   position: absolute;
   width: 17%;
-  left: 42%;
-  top: 52vw;
+  left: 50%;
+  /* top: 100px; */
+  margin-left: -8%;
+  top: 50%;
+  margin-top: -16%;
 }
 
 .rotate img, .pointer img {
