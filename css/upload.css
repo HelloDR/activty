@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "小米兰亭";
+  src: url("font/xiaomilanting.ttf");
+}
+@font-face {
+  font-family: "尚雅大体";
+  src: url("font/shangya.otf");
+}
+@font-face {
+  font-family: "行书";
+  src: url("font/xingshu.ttf");
+}
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  /*background: #5d99fb;*/
+}
+
+@keyframes mysnow {
+  0% {
+    bottom: 100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+    bottom: 0;
+  }
+}
+
+.container {
+  position: fixed;
+}
+
+.pic {
+  position: absolute;
+  opacity: 0;
+  animation: mysnow 5s;
+  height: 30px;
+}
+/*背景图*/
+.bg img{
+  position: absolute;
+  right:0;
+  bottom: 0;
+  height:100%;
+  z-index:-1;
+}
+/*图片上传*/
+.se2{
+  width:100px;
+  height:36px;
+  position:absolute;
+  top: 338px;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 1;
+  opacity: 0;
+}
+.se1{
+  width:100px;
+  height:36px;
+  font-size:16px;
+  color:#fff;
+  background: #28abde;
+  border-radius:5px;
+  position:absolute;
+  top: 338px;
+  left: 50%;
+  margin-left: -50px;
+}
+.se1:hover{
+  cursor: pointer;
+}
+
+/*标题*/
+.title{
+  font-family: "行书";
+  font-size: 45px;
+  text-align: center;
+  /* margin: 20px auto; */
+  color: #f0f9f8;
+  text-shadow: 0 10px 10px #225e9a;
+  background: #0a6ea9;
+  margin: 10px 15px;
+  height: 65px;
+  line-height: 61px;
+  border-radius: 40px;
+  box-shadow: 0 2px 15px #5f99fa;
+}

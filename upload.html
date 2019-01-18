@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>文件上传</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/upload.css">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-fileupload/jquery.ui.widget.js"></script>
+  <script src="js/jquery-fileupload/jquery.iframe-transport.js"></script>
+  <script src="js/jquery-fileupload/jquery.fileupload.js"></script>
+</head>
+<body>
+<div class="bg">
+  <img src="images/upload_back.jpg" alt="">
+</div>
+<h1 class="title">绘本陪娃过寒假</h1>
+<div class="form-group">
+  <form method='post' enctype="multipart/form-data">
+    <input class="se2" id="f_file" type="file" name="file" multiple data-url="upload/activeImg"/>
+    <label for="f_file">
+      <input class="se1" type="button" value="上传图片"/>
+    </label>
+  </form>
+</div>
+<script src="js/upload.js"></script>
+</body>
+</html>
